@@ -1,9 +1,15 @@
-class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
+class Market:
+  def __init__(self, wood, stone):
+    self.wood = wood
+    self.stone = stone
 
-p1 = Person("John", 36)
+Market1 = Market(2, 2)
 
-print(p1.name)
-print(p1.age)
+def Market1_buy(x,y):
+  if x >= Market1.wood and y >= Market1.stone:
+    print("Buy!")
+  else:
+    print("Too expensive!")
+
+Market1_buy(2,1)
+
